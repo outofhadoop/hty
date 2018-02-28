@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/modulePublicStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script type="text/javascript">
+        document.domain = 'ztjy.edu.sh.cn';
+    </script>
+    <title>极地1</title>
+</head>
+<body>
+<div class="spinner maxSize">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+    <div class="bounce4"></div>
+</div>
+
+<div class="backGround">
+   <!--  <video src controls width="915" height="500" id="startvideo"></video> -->
+    <!-- <img src="sco/img/jumpvideo.png" class="zhskip"> -->
+    <div class="stage">
+        <!-- <div class="title">&nbsp;</div> -->
+        <!-- title题目部分 -->
+        <!-- <img src="sco/img/home/word.png" class="chtitle"> -->
+        <!-- 小节按钮 -->
+        <!-- <img src="sco/img/home/xiaojie.png" class="chbrief" onclick="moduleStart('littlebrief')"> -->
+        <!-- iframe部分 -->
+        <iframe class="hidden" id="iframe"></iframe>
+        <!-- 中间按钮部分 -->
+        <div class="chmiddleButtonpart">
+            <div class="homeButton module1" id="hb1">
+                <img class="module1" src="sco/img/home/111.png">
+                <img class="dagou1"  src='sco/img/done.png' alt=''>
+            </div>
+            <div class="homeButton module2" id="hb2">
+                <img class="module2" src="sco/img/home/222.png">
+                <img class="dagou2" src='sco/img/done.png' alt=''>
+            </div>
+            <div class="homeButton module3" id="hb3">
+                <img class="module3" src="sco/img/home/333.png">
+                <img class="dagou3" src='sco/img/done.png' alt=''>
+            </div>
+        </div>    
+    </div>
+    <!-- 底部导航部分 -->
+    <nav class="bottomMenu">
+        <img src="sco/img/home/1.png"    class="chbottomtitleimg chengming">
+        <img src="sco/img/1/111.png" class="chbottomtitleimg xingshi">
+        <img src="sco/img/2/222.png"  class="chbottomtitleimg renming">
+        <img src="sco/img/3/333.png"  class="chbottomtitleimg zihao">
+        
+        <!-- 返回首页按钮 -->
+        <img src="sco/img/home/icon-home.png" class="chgohome" onclick="gohome()">
+        <img src="sco/img/home/icon-list.png" class="chshowcatalog" onclick="showorhide()">
+        <!-- 章节导航部分 -->
+        <div class="chcatalog">
+            <div class="chcatalog1 chcatalogtong" onclick="moduleStart('gomodule1')">
+            </div>
+            <div class="chcatalog2 chcatalogtong" onclick="moduleStart('gomodule2')">
+            </div>
+            <div class="chcatalog3 chcatalogtong" onclick="moduleStart('gomodule3')">
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- <img class="hidden" src="sco/images/endImg.png"> -->
+<script src="js/plugins/jquery-1.11.3.js"></script>
+<script src="js/SCORM_12_APIWrapper.js"></script>
+<script src="js/plugins/touchdrag.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

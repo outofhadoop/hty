@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>finish</title>
+    <link rel="stylesheet" type="text/css" href="css/modulePublicStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/finish.css">
+	<script type="text/javascript">
+        document.domain = 'ztjy.edu.sh.cn';
+    </script>
+</head>
+<body>
+	<video src controls width="915" height="500"></video>
+	<div id="p09">
+		<img src="./sco/img/module2/doneBg.jpg" class="bgImg">
+		<img src="./sco/img/modulefinish.png" class="title"> 
+		<img src="./sco/img/contiueimg.png" class="continue">
+	</div>
+<script src="js/plugins/jquery-1.11.3.js"></script>
+<script src="js/SCORM_12_APIWrapper.js"></script>
+<script src="js/publicFunction.js"></script>
+<script src="js/finish.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".continue").on("click",function(){	
+			window.parent.gohome();
+		});
+	});
+</script>
+</body>
+</html>

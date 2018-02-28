@@ -1,0 +1,234 @@
+* {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+html, body {
+    position: static;
+    overflow: hidden; /*否则可能会出现滑块*/
+    background-color: #fff;
+}
+
+iframe{z-index: 99;}
+video{border-radius: 35px;}
+.maxSize {
+    width: 100%;
+    height: 100%;
+}
+
+.touchScreen{width: 100%;height: 100%;opacity: 0.9;background: black;z-index: 200;display: none;border-radius: 35px;}
+.touchMe{left: 710px;z-index: 21;cursor: pointer;}
+
+.hidden {
+    display: none;
+}
+
+.droppable-active {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.icon {
+    z-index: 99;
+}
+
+.pointer{cursor: pointer;}
+
+.firstImg {
+    z-index: 98;
+}
+
+video {
+    z-index: 96;
+}
+
+.videoEndButton {
+    width: 100px;
+    height: 40px;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    border: 3px solid #fff;
+    border-radius: 23px;
+    background: linear-gradient(rgb(254, 207, 0), rgb(222, 97, 0));
+    text-align: center;
+    color: #fff;
+    font-family: "Microsoft YaHei","Apple LiSung Light";
+    padding-top: 5px;
+    font-size: 25px;
+    z-index: 96;
+}
+
+.buttonDiv {
+    background: rgba(0, 0, 0, .8);
+    z-index: 99;
+}
+
+.buttonDiv > div {
+    width: 230px;
+    height: 70px;
+    left: 50%;
+    top: 46%;
+    margin-left: -115px;
+    margin-top: -35px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    background: linear-gradient(rgb(254, 207, 0), rgb(222, 97, 0));
+    text-align: center;
+    color: #fff;
+    font-family: "Microsoft YaHei","Apple LiSung Light";
+    padding-top: 7px;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.questWord {
+    text-indent: 2em;
+    font-family: "Microsoft YaHei","Apple LiSung Light";
+    font-size: 27px;
+    font-weight: 600;
+    /* color: #ff6701; */
+    color: rgb(50,132,138);
+}
+
+.endDiv {
+    z-index: 99;
+    background: url("../sco/images/endImg.png") 100% 100%;
+}
+
+.endButton{
+    width: 160px;
+    height: 40px;
+    top: 70%;
+    left: 50%;
+    margin-left: -80px;
+    cursor: pointer;
+    border: 3px solid #f4934f;
+    border-radius: 20px;
+    background-color: #eee;
+    text-align: center;
+    color: #f4934f;
+    font-family: "Microsoft YaHei","Apple LiSung Light";
+    padding-top: 5px;
+    font-size: 25px;
+    z-index: 96;
+}
+.endButton:active{
+    color: #fff;
+    background-color: #f4934f;
+}
+
+.spinner {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    z-index: 99;
+}
+
+.spinner > div {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 48%;
+    background-color: #0b8b56;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes bouncedelay {
+    0%, 80%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    40% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+/*打钩*/
+.dagou1{right: -188px;bottom: -350px;display: none;}
+.dagou2{right: -191px;bottom: -350px;display: none;}
+.dagou3{right: -192px;bottom: -350px;display: none;}
+
+.dagou4{right: -3px;bottom: 9px;display: none;}
+.dagou5{right: -3px;bottom: 9px;display: none;}
+.dagou6{right: -3px;bottom: 9px;display: none;}
+
+.pdagou1{right: -3px;bottom: 9px;display: none;}
+.pdagou2{right: -3px;bottom: 9px;display: none;}
+.pdagou3{right: -3px;bottom: 9px;display: none;}
+.pdagou4{right: -3px;bottom: 9px;display: none;}
+.pdagou5{right: -3px;bottom: 9px;display: none;}
+.pdagou6{right: -3px;bottom: 9px;display: none;}
+.pdagou7{right: -3px;bottom: 9px;display: none;}
+.pdagou8{right: -3px;bottom: 9px;display: none;}
+/*导入页标签*/
+.chlabel{
+    top: 15%;
+    left: 32%;
+}
+/*知识点结束页*/
+.cwknowover{
+    left: 0%;
+    top: 0%;
+    
+    width: 915px;
+    height: 500px;
+    background: url(../sco/img/1/know.png);
+    background-repeat:no-repeat;
+}
+.cwknowovertitle{
+    top: 13%;
+    left: 12%;
+}
+#passpage{
+    width: 900px;
+    height: 500px;
+    background: rgba(0,0,0,0.2);
+}
+/*恭喜你全部答对了*/
+.cwright{
+    top: 24%;
+    left: 47%;
+}
+/*奖品*/
+.cwprize{
+    top: 54%;
+    left: 56%;
+}
+/*继续学习按钮*/
+.cwcontinuestudy{
+    right: 39%;
+    bottom: 10%;
+    cursor: pointer;
+}
+/*恭喜你完成本模块的学习*/
+.cwmoduleover{
+    top: 24%;
+    left: 43%;
+}

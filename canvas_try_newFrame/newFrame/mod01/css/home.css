@@ -1,0 +1,81 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.videoBox{
+	position: absolute;
+	display: inline-block;
+    display: none;
+    z-index: 100;
+}
+
+.bottomNav{
+	position: absolute;
+    border: 0;
+    list-style: none;
+    z-index: -25;
+}
+.bottomMenu{width: 100%;height: 48px;z-index: 1000;text-align: left;bottom: -9px;position: absolute;}
+.bottomMenu img{cursor: pointer;}
+.chbottomtitleimg{
+	position: relative;
+	left: 18px;
+    bottom: 21px;
+}
+.chbottomtitleimg2,.chbottomtitleimg3,.chbottomtitleimg4{
+	display: none;
+}
+.chgohome {
+    right: 103px;
+	top: -20px;
+	position: absolute;
+}
+.chshowcatalog {
+    right: 40px;
+	top: -15px;
+	position: absolute;
+}
+
+.chcatalog {
+    width: 212px;
+    height: 234px;
+    background: url(../sco/img/home/list.png) no-repeat;
+    background-size: 100% 100%;
+    bottom: 65px;
+    right: 14px;
+	display: none;
+	position: absolute;
+}
+.chcatalogtong {
+    width: 83%;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-repeat: no-repeat;
+    -moz-background-attachment: fixed;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+.chcatalog2 {
+    margin-top: -5px;
+}
+.chcatalog1 {
+    margin-top: 8px;
+}
+.chcatalog2:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+.chcatalog3:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+.chcatalog1:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+
+.bottomNav {
+    width: 1000px;
+    height: 576px;
+}

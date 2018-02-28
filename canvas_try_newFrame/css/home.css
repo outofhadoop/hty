@@ -1,0 +1,158 @@
+.checkedImg2{visibility: hidden;width: 100px;}
+.checkedImg21{left: 165px;}
+.checkedImg22{left: 410px;}
+.checkedImg23{left: 650px;}
+.checkedImg24{left: 885px;}
+.allDone{background-image: url("../sco/images/allDone.png");visibility: hidden;}
+
+/*///////////////////////////////////*/
+/*.title{position: relative;color: #333;line-height: 95px;font-size: 35px;text-align: center;font-family: "Microsoft YaHei";}*/
+.chtitle{
+	width: 415px;
+	left: 50%;
+	top: 25%;
+	margin-left: -207.5px;
+}
+/*iframe{z-index: 99;width: 1024px;height: 560px;left: 128px;top: 100px;}*/
+/*  iframe{z-index: 99;width: 1000px;height: 528px;left: 0px;top: 0px;} */
+iframe{
+	z-index: 99;
+	width: 915px;
+	height: 500px;
+	left: 42px;
+	top: 18px;
+	border-radius: 30px;
+	overflow: hidden;
+}
+/* .backGround{width: 1280px;height: 760px;background: url("../sco/img/home/bg.jpg");background-size: 100% 100%;} */
+.backGround{width: 1000px;height: 576px;}
+
+.borderBoss{z-index:999;display: none;}
+
+.stage{width: 1000px;height: 585px;background: url("../sco/img/home/bg.png");background-size: 100% 100%;}
+
+/*#page4 img:nth-child(3){ background-color: #0b8b56}*/
+/*中间按钮部分*/
+.chmiddleButtonpart{
+	width: 100%;
+	right: 17px;
+	/* // height: 220px;
+	// left: 0px;
+	// top: 14%;
+	// text-align: center; */
+}
+div.homeButton{
+	/* // display: inline-block;
+	// background: no-repeat;
+	// // background-size: 100%;
+	// position: relative;
+	// width: 376px;
+	// height: 117px;
+	// // border-radius: 25px;
+	// // margin-left: 5px;
+	// cursor: pointer;
+	// overflow: hidden; */
+	
+}
+
+
+
+div#hb1{margin-left: 64px;bottom: -49px;}
+div#hb2{margin-left: 360px;bottom: -49px;}
+div#hb3{margin-left: 658px;bottom: -49px;}
+/* // div#hb3{background-image: url("../sco/img/home/zuXian1.png");margin-left: 700px;} */
+/*div#hb4{background-image: url("../sco/img/home/4.png");}*/
+
+/* // .homeButton div img:nth-child(2){width: 120px;right: 0;bottom: 0;} */
+
+.bottomMenu{width: 100%;height: 48px;bottom: -9px;z-index: 1000;text-align: left;}
+.bottomMenu img{cursor: pointer;}
+/*标题*/
+.chbottomtitleimg{
+	position: relative;
+	left: 18px;
+    bottom: 21px;
+}
+.chgohome{
+	right: 103px;
+	top: -20px;
+}
+.chshowcatalog{
+	right: 40px;
+	top: -15px;
+}
+.chcatalog{
+	width: 212px;
+	height: 234px;
+	background: url(../sco/img/home/list.png) no-repeat;
+	background-size: 100% 100%;
+	bottom: 65px;
+	right: 14px;
+	display: none;
+}
+/*目录项目*/
+.chcatalogtong{
+	width:83%;
+	height: 64px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-repeat: no-repeat;
+	-moz-background-attachment:fixed;
+	background-position: 50% 50%;
+	cursor: pointer;
+}
+.chcatalog1{
+	margin-top: 8px;
+	/* // background-image: url(../sco/img/home/catalog1.png); */
+}
+.chcatalog1:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+.chcatalog2{
+	margin-top: -5px;
+	/* // background-image: url(../sco/img/home/catalog2.png); */
+}
+.chcatalog2:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+.chcatalog3{
+	/* // margin-top: -3px;
+	// background-image: url(../sco/img/home/catalog3.png); */
+}
+.chcatalog3:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+
+/*小节按钮*/
+.chbrief{
+	top: 1%;
+	right: 2%;
+	cursor: pointer;
+	display: none;
+}
+
+.module1,.module2,.module3{
+	cursor: pointer;
+}
+
+
+#page1 img:first-child{  width: 220px;height: 85px;margin-left: 40px;}
+#page2 img:first-child{  width: 220px;height: 85px;margin-left: 280px;}
+#page3 img:first-child{  width: 220px;height: 85px;margin-left: 520px;}
+#page4 img:first-child{  width: 220px;height: 85px;margin-left: 760px;}
+.kangdong{left: 100px;top: 100px;}
+.xuexi{font-size: 33px;font-weight: bolder;width: 1025px;color: #D61818;left: 469px;top: 280px;}
+.xuexi_one{font-size: 33px;font-weight: bolder;width: 1025px;color: #D61818;left: 539px;top: 336px;}
+.jixu{width: 115px;height: 44px;left: 900px;top: 500px;cursor: pointer;display: block;}
+#p1{visibility: hidden; left: 128px; top: 89px;z-index: 1000;}
+.module1_bg{left: 313px;top: 201px;}
+.jixu{left: 317px;top: 204px;}
+/*跳过视频*/
+.zhskip{
+	bottom: 17%;
+	right: 5%;
+	cursor: pointer;
+	z-index: 98;
+}
+#startvideo{top: 32px;left: 45px;}

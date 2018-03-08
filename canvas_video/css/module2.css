@@ -1,0 +1,57 @@
+.navagation{width: 915px;height: 500px;top: 0px;left: 0px;background: url(../sco/img/2/navbg.png);}
+video{display:none;}
+#p02_24,#p02_23,#p02_22,#p02_21,#p02,#p02_1,#p03,#p04,#p05,#p06,#u01s03p03,#u01s03p04,#p07,#p08,#p09,#p10,#p11,#p12,#p13,#p14,#p15,#p16,#p17,#p18,.select{visibility: hidden;width: 100%;height: 100%;}
+#p02_24,#p02_23,#p02_22,#p02_21,#p02_1,#p02,#p03,#p04,#p05,#p06,#p07,#p08,#p09,#p10,#p11,#p12{visibility: hidden;}
+.cwgowenfang{
+    right: 20px;
+    bottom: 20px;
+    z-index: 97;
+    display: none;
+}
+#p02{background: url(../sco/img/2/bg.png);}
+.p02wordBlue{left: 40px;top: 20px;}
+.board{left: 572px;top: 145px;}
+.puzzle{height: 80px;}
+.puzzle3{left: 20px;top: 160px;}
+.puzzle2{left: 190px;top: 160px;}
+.puzzle9{left: 360px;top: 160px;}
+.puzzle4{top: 270px;left: 43px;}
+.puzzle6{left: 215px;top: 270px;}
+.puzzle7{left: 383px;top: 270px;}
+.puzzle5{top: 368px;left: 43px;}
+.puzzle8{top: 368px;left: 190px;}
+.puzzle1{left: 383px;top: 368px;}
+.puzzleBox1{left: 591px;top: 152px;}
+.puzzleBox2{left: 687px;top:152px;}
+.puzzleBox3{left: 785px;top:160px;}
+.puzzleBox4{left: 591px;top:254px;}
+.puzzleBox5{left: 687px;top:254px;}
+.puzzleBox6{left: 785px;top:254px;}
+.puzzleBox7{left: 591px;top:351px;}
+.puzzleBox8{left: 687px;top:351px;}
+.puzzleBox9{left: 785px;top:351px;}
+.puzzleBox1 > img {left: -14px;top: 0px;}
+.puzzleBox2 > img {left: -34px;top: 0px;}
+.puzzleBox3 > img {left: -32px;top: -8px;}
+.puzzleBox4 > img {left: -12px;top: -30px;}
+.puzzleBox5 > img {left: -9px;top: -8px;}
+.puzzleBox6 > img {left: -8px;top: -6px;}
+.puzzleBox7 > img {left: -12px;top: -32px;}
+.puzzleBox8 > img {left: -34px;top: -9px;}
+.puzzleBox9 > img {left: -33px;top: -8px;}
+.puzzleBox{height: 80px;width: 80px;}
+.p02Pass{display: none;}
+.in{left: 367px;top: 400px}
+.medals{left: 300px;}
+.p03Pass{left: 400px;top:410px;}
+.cwknowover{background: url(../sco/img/2/overBG.png);}
+
+.p04BG{left: 45px;top: 65px}
+.p04clickDiv{width: 200px;height: 50px;background: rgba(0, 0, 0, 0)}
+.p04clickDiv1{left: 85px;top: 243px;}
+.p04clickDiv2{left: 377px;top: 243px;}
+.p04clickDiv3{left: 669px;top: 243px;}
+.p04falseResponse,.p04trueResponse{left: 250px;top: 30px;}
+.p04again{left: 379px;top: 390px;}
+.p04next{left: 351px;top: 390px;}
+.p04true,.p04false{display:none;}

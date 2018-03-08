@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.5 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-F37BF8D122FA3F21E3F8D0B831B8EFB3" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <duration>00:02:58</duration>
+  </metadata>
+  <organizations default="ORG-E02B2557A83FDACF69CE0D3DDEFA5B8C">
+    <organization identifier="ORG-E02B2557A83FDACF69CE0D3DDEFA5B8C" structure="hierarchical">
+        <title>1.极地之旅-极地起航</title>
+        
+        <item identifier="S200001" identifierref="R_S200001" isvisible="true">
+          <title>走进神秘南极</title>
+        </item>
+        
+        <item identifier="S200002" identifierref="R_S200001" isvisible="true">
+          <title>走进梦幻北极</title>
+        </item>
+  	    
+        <item identifier="S200003" identifierref="R_S200001" isvisible="true">
+          <title>神奇的极光</title>
+        </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="R_S200001" type="webcontent" href="home.html" adlcp:scormtype="sco">
+      <file href="home.html" />
+    </resource>
+    <resource identifier="R_D1" adlcp:scormtype="asset" type="webcontent">
+      <file href="package/js/jquery/jquery-1.11.3.js" />
+  	  <file href="package/js/jquery/jquery-ui-1.9.2.custom.min.js" />
+  	  <file href="package/js/jquery/jquery.ui.touch-punch.min.js" />
+      <file href="package/js/layout/layout.js" />
+      <file href="package/js/bad-behavior.js" />
+      <file href="package/js/home.js" />
+      <file href="package/js/illegal.js" />
+      <file href="package/js/protectyourself.js" />
+      <file href="package/js/media/soundmanager2.js" />
+      <file href="package/js/SCORM_12_APIWrapper.js" />
+    </resource>
+  </resources>
+</manifest>
+

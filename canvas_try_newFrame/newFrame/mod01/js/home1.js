@@ -3,7 +3,7 @@
 // 模块数量
 $(document).ready(function(){
     var stageLayer,bottomNavLayer,iframeLayer,clickLayer,btnHomeL,catalogsLayer,modLayer;
-    var shape;
+    var shape,video;
     btnHomeL = new LSprite();
     var goWhere = function(g){
         var g = g || '?';
@@ -49,34 +49,20 @@ $(document).ready(function(){
         }
     }
     function main(){
-        LGlobal.preventDefault=false;
-        //------------自适应函数
-    //     var resizeWindow = function() {
-    //     var t = $(".bottomNav"),
-    //         tWith = t.width(),
-    //         tHeight = t.height(),
-    //         pWith,
-    //         pHeight,
-    //         scaleX, scaleY, tLeft, tTop;
-    //     return function() {
-    //         pWith = $(window).width();
-    //         pHeight = $(window).height();
-    //         scaleX = pWith / tWith;
-    //         scaleY = pHeight / tHeight;
-    //         scaleX = scaleX > scaleY ? scaleY : scaleX;
-    
-    //         tLeft = (pWith - tWith) / 2;
-    //         tTop = (pHeight - tHeight) / 2;
-    //         t.css({
-    //             left: tLeft + "px",
-    //             top: tTop + "px",
-    //             "transform": "scale(" + scaleX + "," + scaleX + ")"
-    //         });
-    //     }
-    // }();
-    // resizeWindow();
-    // $(window).resize(resizeWindow);
+        // LGlobal.preventDefault=false;
+        // LGlobal.align = LStageAlign.MIDDLE;
+        LGlobal.stageScale = LStageScaleMode.SHOW_ALL;
+        LSystem.screen(LStage.FULL_SCREEN);
+        // $(window).resize(function(){
+        //     var canvasViewT = $('#canvas_game_canvas').css('margin-top'),
+        //         canvasViewL = $('#canvas_game_canvas').css('margin-left'),
+        //         canvasViewH = $('#canvas_game_canvas').css('height'),
+        //         canvasViewW = $('#canvas_game_canvas').css('width');
+
+            
+        // });
         shape = new LShape();
+        // video = new LVideo();
         addChild(shape);
                 // 如果是提交版就加域
                 if(resManager._commit){
@@ -158,57 +144,62 @@ $(document).ready(function(){
         stageLayer.addChild(modLayer);
     
         // 右边目录和首页按钮
-        resManager.setImgP(780,278,imgHomeB[3]);
-        imgHomeB[3].visible = false;
-        $(".chgohome").click(function(){
-            goWhere('home');
-        })
-        $(".chcatalog1").click(function(){
-            goWhere('mod1');
-            $(".chcatalog").css('display','none');
-            catalogShow = !catalogShow;
-        })
-        $(".chcatalog2").click(function(){
-            goWhere('mod2');
-            $(".chcatalog").css('display','none');
-            catalogShow = !catalogShow;
-        })
-        $(".chcatalog3").click(function(){
-            goWhere('mod3');
-            $(".chcatalog").css('display','none');
-            catalogShow = !catalogShow;
-        })
+        // resManager.setImgP(780,278,imgHomeB[3]);
+        // imgHomeB[3].visible = false;
+        // $(".chgohome").click(function(){
+        //     goWhere('home');
+        // })
+        // $(".chcatalog1").click(function(){
+        //     goWhere('mod1');
+        //     $(".chcatalog").css('display','none');
+        //     catalogShow = !catalogShow;
+        // })
+        // $(".chcatalog2").click(function(){
+        //     goWhere('mod2');
+        //     $(".chcatalog").css('display','none');
+        //     catalogShow = !catalogShow;
+        // })
+        // $(".chcatalog3").click(function(){
+        //     goWhere('mod3');
+        //     $(".chcatalog").css('display','none');
+        //     catalogShow = !catalogShow;
+        // })
     
         resManager.setImgP(915,520,imgHomeB[4]);
         resManager.addArrImg(bottomNavLayer,imgHomeB,3,4);
         bottomNavLayer.addChild(imgHomeB[4])
         bottomNavLayer.addChild(imgHomeB[5])
-        // addChild(bottomNavLayer);
+        addChild(bottomNavLayer);
     
-            //    目录进入模块的按钮
-        // catalogsLayer = new LSprite();
-        // catalogsLayer.visible = false;
-        // catalogsLayer.x = imgHomeB[3].x;
-        // catalogsLayer.y = imgHomeB[3].y;
-        // var catalogs1 = new LButton(imgHomeB[10],imgHomeB[11]);
-        // catalogs1.x = 20;
-        // catalogs1.y = 20;
-        // catalogsLayer.addChild(catalogs1)
+               // 目录进入模块的按钮
+        catalogsLayer = new LSprite();
+        catalogsLayer.visible = false;
+        catalogsLayer.x = imgHomeB[3].x;
+        catalogsLayer.y = imgHomeB[3].y;
+        var catalogs1 = new LButton(imgHomeB[10],imgHomeB[11]);
+        catalogs1.x = 20;
+        catalogs1.y = 20;
+        catalogsLayer.addChild(catalogs1)
     
-        // var catalogs2 = catalogs1.clone();
-        // catalogs2.x = 20;
-        // catalogs2.y = 80;
-        // catalogsLayer.addChild(catalogs2)
+        var catalogs2 = catalogs1.clone();
+        catalogs2.x = 20;
+        catalogs2.y = 80;
+        catalogsLayer.addChild(catalogs2)
     
-        // var catalogs3 = catalogs1.clone();
-        // catalogs3.x = 20;
-        // catalogs3.y = 145;
-        // catalogsLayer.addChild(catalogs3)
-        // bottomNavLayer.addChild(catalogsLayer); 
+        var catalogs3 = catalogs1.clone();
+        catalogs3.x = 20;
+        catalogs3.y = 145;
+        catalogsLayer.addChild(catalogs3)
+        bottomNavLayer.addChild(catalogsLayer); 
     
         imgHomeB[4].addEventListener(LMouseEvent.MOUSE_UP,function(){
             catalogShow = !catalogShow;
             imgHomeB[3].visible = catalogShow;
+            // video.load('./sco/video/jd_qh_nj_1.mp4',)
+            // video.addEventListener(LEvent.COMPLETE,function(){
+            //     stageLayer.addChild(video);
+            //     video.play();
+            // });
             // catalogsLayer.visible = catalogShow;
         });
         $(".chshowcatalog").click(function(){
@@ -220,38 +211,38 @@ $(document).ready(function(){
             }
             
         })
-        // catalogs1.addEventListener(LMouseEvent.MOUSE_UP,function(){
-        //     catalogShow = !catalogShow;
-        //     imgHomeB[3].visible = catalogShow;
-        //     // catalogsLayer.visible = catalogShow;
-        //     goWhere('mod1');
-        // });
-        // catalogs2.addEventListener(LMouseEvent.MOUSE_UP,function(){
-        //     catalogShow = !catalogShow;
-        //     imgHomeB[3].visible = catalogShow;
-        //     // catalogsLayer.visible = catalogShow;
-        //     goWhere('mod2');
-        // });
-        // catalogs3.addEventListener(LMouseEvent.MOUSE_UP,function(){
-        //     catalogShow = !catalogShow;
-        //     imgHomeB[3].visible = catalogShow;
-        //     // catalogsLayer.visible = catalogShow;
-        //     goWhere('mod3');
-        // });
+        catalogs1.addEventListener(LMouseEvent.MOUSE_UP,function(){
+            catalogShow = !catalogShow;
+            imgHomeB[3].visible = catalogShow;
+            // catalogsLayer.visible = catalogShow;
+            goWhere('mod1');
+        });
+        catalogs2.addEventListener(LMouseEvent.MOUSE_UP,function(){
+            catalogShow = !catalogShow;
+            imgHomeB[3].visible = catalogShow;
+            // catalogsLayer.visible = catalogShow;
+            goWhere('mod2');
+        });
+        catalogs3.addEventListener(LMouseEvent.MOUSE_UP,function(){
+            catalogShow = !catalogShow;
+            imgHomeB[3].visible = catalogShow;
+            // catalogsLayer.visible = catalogShow;
+            goWhere('mod3');
+        });
     
     
         // 左下角标题
-        // resManager.setImgP(10,515,imgHomeB[6]);
-        // bottomNavLayer.addChild(imgHomeB[6]);
-        // resManager.setImgP(10,515,imgHomeB[7]);
-        // imgHomeB[7].visible = false;
-        // bottomNavLayer.addChild(imgHomeB[7]);
-        // resManager.setImgP(10,515,imgHomeB[8]);
-        // imgHomeB[8].visible = false;
-        // bottomNavLayer.addChild(imgHomeB[8]);
-        // resManager.setImgP(10,515,imgHomeB[9]);
-        // imgHomeB[9].visible = false;
-        // bottomNavLayer.addChild(imgHomeB[9]);
+        resManager.setImgP(10,515,imgHomeB[6]);
+        bottomNavLayer.addChild(imgHomeB[6]);
+        resManager.setImgP(10,515,imgHomeB[7]);
+        imgHomeB[7].visible = false;
+        bottomNavLayer.addChild(imgHomeB[7]);
+        resManager.setImgP(10,515,imgHomeB[8]);
+        imgHomeB[8].visible = false;
+        bottomNavLayer.addChild(imgHomeB[8]);
+        resManager.setImgP(10,515,imgHomeB[9]);
+        imgHomeB[9].visible = false;
+        bottomNavLayer.addChild(imgHomeB[9]);
         
     }
     

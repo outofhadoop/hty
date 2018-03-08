@@ -1,0 +1,62 @@
+.navagation{width: 915px;height: 500px;top: 0px;left: 0px;background: url(../sco/img/3/navbg.png);}
+video{display:none;}
+#p02,#p03,#p04,#p05,#p06,#p07,#p08,#p09,#p10,#p11,#p12,#p13,#p14,#p15,#p16,#p17,#p18{visibility: hidden;width: 100%;height: 100%;}
+#p02,#p03,#p04,#p05,#p06,#p07,#p08,#p09,#p10,#p11,.nullBox1,.nullBox2,.nullBox3{visibility: hidden;}
+.cwgowenfang{
+    right: 20px;
+    bottom: 20px;
+    z-index: 97;
+    display: none;
+}
+#p02{background: url(../sco/img/3/bg1.png)}
+.p02Img1{left: 20px;top: 80px;}
+.p02Img2{left: 260px;top: 80px;}
+.p02Img3{left: 508px;top: 80px;}
+.p02Img4{left: 740px;top: 80px;}
+.p02Word{left: 25px;}
+.dot{height: 40px;width: 140px;}
+.dot1{left: 24px;top: 300px;}
+.dot2{left: 264px;top: 300px;}
+.dot3{left: 515px;top: 300px;}
+.dot4{left: 744px;top: 300px;}
+.word1{left: 20px;top: 390px;}
+.word2{left: 260px;top: 390px;}
+.word3{left: 508px;top: 390px;}
+.word4{left: 740px;top: 390px;}
+.p02submit{left: 400px;top: 425px;display: none;}
+.p02Error{display: none;}
+.pass{left: 318px;}
+.p02Understand{left: 370px;top: 400px;}
+.p02Right{display: none;}
+.p02Again{left: 350px;top: 419px;}
+.p02error{left: 55px;height: 370px;top: 25px;}
+.p02ErrImg1{left: 268px;top: 157px;}
+.p02ErrImg2{left: 734px;top: 157px;}
+
+#p03{background: url(../sco/img/3/bg1.png)}
+.p03Word{left: 70px;top: 20px;}
+.p03Img1{left: 30px;top: 125px;}
+.p03Img2{left: 334px;top: 125px;}
+.p03Img3{left: 641px;top: 125px;}
+.p03done1{left: 250px;top:360px;display: none;}
+.p03done2{left: 554px;top:360px;display: none;}
+.p03done3{left: 861px;top:360px;display: none;}
+.finish{cursor: pointer;left: 400px;top:430px;display: none;}
+.cwknowover{background: url(../sco/img/3/overBG.png)}
+
+.p04BG{left: 25px;top: 65px}
+.p04clickDiv{width: 200px;height: 50px;background: rgba(0, 0, 0, 0);}
+.p04clickDiv1{left: 65px;top: 243px;}
+.p04clickDiv2{left: 357px;top: 243px;}
+.p04clickDiv3{left: 649px;top: 243px;}
+.p04falseResponse,.p04trueResponse{left: 240px;top: 30px;}
+.p04again,.p04next{left: 370px;top: 392px;}
+.p04true,.p04false{display:none;}
+
+.p02modify{top: 161px;height: 179px;}
+.p02modify4{left: 680px;}
+.p02modify3{left: 63px;}
+.p02modify2{left: 477px;}
+.p02modify1{left: 267px;}
+
+.p02wordBlueNewAddIn2017_12_20_14_58_YesThisClassNameIsVeryLong{top: 20px;left: 250px}

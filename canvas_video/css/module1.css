@@ -1,0 +1,70 @@
+/*.navagation{width: 100%;}*/
+.navagation{width: 915px;height: 500px;top: 0px;left: 0px;background: url(../sco/img/1/navbg.png);}
+/*.p15-bg{width:100%;}*/
+#p01,#p02,#p03,#p04,#p05,#p06,#u01s03p03,#u01s03p04,#p07,#p08,#p09,#p10,#p11,#p12{visibility: hidden;width: 100%;height: 100%;}
+#p01,#p02,#p03,#p04,#p05,#p06,#p07,#p08,#p09,#p10,#p11,#p12,.nullBox1,.nullBox2,.nullBox3{visibility: hidden;}
+/* // .touchScreen{width: 100%;height: 100%;opacity: 0.9;background: black;z-index: 200;display: none;} */
+/* // .touchMe{left: 750px;z-index: 21;} */
+.navTittle2{top: 210px;left: 350px;}
+ video{display:none;}   
+/*video{width: 1026px;visibility: hidden;}*/
+.cwgowenfang{
+    right: 20px;
+    bottom: 20px;
+    z-index: 97;
+    display: none;
+}
+body{
+	border-radius: 35px;
+}
+#p02{background: url(../sco/img/1/bg.png);}
+.p02next{left: 390px;top: 400px;cursor: pointer;}
+.clothes1{left: 19px;top: 100px;}
+.clothes2{left: 142px;top: 100px;}
+.clothes3{left: 265px;top: 100px;}
+.clothes4{left: 388px;top: 100px;}
+.clothes5{left: 19px;top: 300px;}
+.clothes6{left: 142px;top: 300px;}
+.clothes7{left: 265px;top: 300px;}
+.clothes8{left: 388px;top: 300px;}
+.trunk{left: 600px;top: 174px;}
+.p02hideTrunk{border-radius: 49px;
+    left: 679px;
+    top: 307px;
+    width: 127px;
+    height: 115px;
+    transform: rotate(112deg) rotateY(60deg);
+    overflow: hidden;}
+
+
+/* // #p03{background: url(../sco/img/1/bg2.png);} */
+.wordBG{left: 40px;top: 10px;}
+.Antarctica{left: 74px;top: 100px;display: none;}
+.earth{left: 74px;top: 100px;}
+.clickAntarctia{height: 38px;width: 337px;left: 240px;top: 432px;background: rgba(0, 0, 0, 0);}
+.responseBox{display: none;}
+.responseBox1{display: none;background: url(../sco/img/1/responseBG.png);}
+.p04again,.p04next{left: 386px;top: 400px;}
+.nextRound{left: 355px;top: 400px;}
+.responseImg2{left: 328px;top: 37px;}
+.p04littleChild{left: 287px;top: 37px;}
+
+#p04{background: url(../sco/img/1/bg3.png);}
+.quesBlue{left: 20px;top: 20px;}
+.sele{top: 216px;}
+.sele1{left: 20px;}
+.sele2{left: 246px;}
+.sele3{left: 472px;}
+.sele4{left: 700px;}
+.p04Response2,.p04Response1{display: none;background: url(../sco/img/1/responseBG.png);}
+
+#p05{background: url(../sco/img/module1/m03u01s03p02/bg.jpg);}
+#p07{background: url(../sco/img/1/overBG.png);}
+
+.bSele1{left: 380px;top: 300px;cursor: pointer;}
+.aSele1{left: 100px;top:300px;cursor: pointer;}
+.cSele1{left: 650px;top:300px;cursor: pointer;}
+.bSele2{left: 380px;top: 300px;cursor: pointer;}
+.aSele2{left: 100px;top:300px;cursor: pointer;}
+.cSele2{left: 650px;top:300px;cursor: pointer;}
+.p02child{left: 350px;top: 107px;}
